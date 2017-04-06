@@ -1,0 +1,57 @@
+{
+  "name": "softwareneedsyou-server-api",
+  "version": "0.0.1",
+  "description": "SoftwareNeedsYou!'s server API",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "debug": "cross-env DEBUG=softwareneedsyou-server-api:* node start",
+    "test": "node test/index-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/softwareneedsyou/softwareneedsyou-server-api.git"
+  },
+  "keywords": [
+    "Software Needs You!",
+    "SNY",
+    "server",
+    "API"
+  ],
+  "author": {
+    "name": "SNY! Team",
+    "url": "https://github.com/softwareneedsyou"
+  },
+  "contributors": [
+    {
+      "name": "Tristan",
+      "url": "https://github.com/TristanEduProjet"
+    },
+    {
+      "name": "Bastien",
+      "url": "https://github.com/Bastien91580"
+    },
+    {
+      "name": "Michel",
+      "url": "https://github.com/half-shell"
+    }
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/softwareneedsyou/softwareneedsyou-server-api/issues"
+  },
+  "homepage": "https://github.com/softwareneedsyou/softwareneedsyou-server-api#readme",
+  "dependencies": {
+    "body-parser": "~1.16.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "express": "~4.14.1",
+    "hjs": "~0.0.6",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.2"
+  },
+  "devDependencies": {
+    "cross-env": "^4.0.0"
+  }
+}
