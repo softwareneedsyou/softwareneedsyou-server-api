@@ -10,7 +10,7 @@
     "test": "node test/index-test.js"
   },
   "config": {
-    "port" : "8080"
+    "port": "8080"
   },
   "repository": {
     "type": "git",
@@ -52,9 +52,11 @@
     "express": "~4.14.1",
     "hjs": "~0.0.6",
     "morgan": "~1.7.0",
-    "serve-favicon": "~2.3.2"
+    "sequelize": "^3.30.4",
+    "serve-favicon": "~2.3.2",
   },
   "devDependencies": {
-    "cross-env": "^4.0.0"
+    "cross-env": "^4.0.0",
+    "sequelize-cli": "^2.7.0"
   }
 }
