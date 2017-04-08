@@ -1,6 +1,6 @@
 {
   "name": "softwareneedsyou-server-api",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "SoftwareNeedsYou!'s server API",
   "private": true,
   "main": "index.js",
@@ -8,6 +8,9 @@
     "start": "node ./bin/www",
     "debug": "cross-env DEBUG=softwareneedsyou-server-api:* node start",
     "test": "node test/index-test.js"
+  },
+  "config": {
+    "port" : "8080"
   },
   "repository": {
     "type": "git",
