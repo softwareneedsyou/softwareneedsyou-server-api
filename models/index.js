@@ -5,7 +5,7 @@ let path      = require('path');
 let Sequelize = require('sequelize');
 let basename  = path.basename(module.filename);
 let env       = process.env.NODE_ENV || 'development';
-let config    = require(__dirname + '/..\config\config.json')[env];
+let config    = require(path.join(__dirname, '..', 'config', 'config.json'))[env];
 let db        = {};
 
 if (config.use_env_variable) {
@@ -20,7 +20,7 @@ fs
     return (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js');
   })
   .forEach(function(file) {
-    var model = sequelize['import'](path.join(__dirname, file));
+    let model = sequelize['import'](path.join(__dirname, file));
     db[model.name] = model;
   });
 

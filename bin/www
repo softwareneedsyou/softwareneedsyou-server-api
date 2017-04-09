@@ -18,11 +18,18 @@ app.set('port', port);
 let server = require('http').createServer(app);
 
 /**
- * Listen on provided port, on all network interfaces.
+ * Create or Sync the database with models
  */
-server.listen(port);
-server.on('error', onError);
-server.on('listening', onListening);
+require('../models').sequelize.sync({ logging: console.log, force: true }).then(function() {
+    /**
+     * Listen on provided port, on all network interfaces.
+     */
+    server.listen(port, function() {
+        debug('Server Express listening port ' + server.address().port);
+    });
+    server.on('error', onError);
+    server.on('listening', onListening);
+});
 
 /**
  * Normalize a port into a number, string, or false.
