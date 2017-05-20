@@ -1,6 +1,11 @@
 # softwareneedsyou-server-api
 Software Needs You ! [**Server API** + BDD]
 
+Overall [![bitHound Overall Score](https://www.bithound.io/github/softwareneedsyou/softwareneedsyou-server-api/badges/score.svg)](https://www.bithound.io/github/softwareneedsyou/softwareneedsyou-server-api)
+[![bitHound Dependencies](https://www.bithound.io/github/softwareneedsyou/softwareneedsyou-server-api/badges/dependencies.svg)](https://www.bithound.io/github/softwareneedsyou/softwareneedsyou-server-api/master/dependencies/npm)
+[![bitHound Dev Dependencies](https://www.bithound.io/github/softwareneedsyou/softwareneedsyou-server-api/badges/devDependencies.svg)](https://www.bithound.io/github/softwareneedsyou/softwareneedsyou-server-api/master/dependencies/npm)
+[![bitHound Code](https://www.bithound.io/github/softwareneedsyou/softwareneedsyou-server-api/badges/code.svg)](https://www.bithound.io/github/softwareneedsyou/softwareneedsyou-server-api)
+
 Serveur exposant l'API du service de donnée.
 
 ## Structure _(simplifiée)_
